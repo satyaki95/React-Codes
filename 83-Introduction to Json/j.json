@@ -1,0 +1,16 @@
+
+{
+    "friends": [
+
+        {
+            "name" : "Satyaki",
+            "age" : 25
+        },
+        {
+            "name" : "Rahul",
+            "age" : 28
+        }
+    
+    ]
+    
+}
