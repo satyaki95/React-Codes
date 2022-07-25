@@ -1,0 +1,35 @@
+import React from 'react';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Blogs from './components/25-React-routing/Blogs';
+import Contact from './components/25-React-routing/Contact';
+import Error from './components/25-React-routing/Error';
+import Home from './components/25-React-routing/Home';
+import Nav from './components/25-React-routing/Nav';
+import style from './components/25-React-routing/index.css';
+
+
+
+function App(){
+
+   return (
+    <BrowserRouter>
+
+     <Nav />
+
+    <Routes>
+
+    <Route path="/home" element={<Home />} />
+    <Route path="/contact" element={<Contact />} />
+    <Route path="/blog" element={<Blogs />} />
+    <Route path="*" element={<Error />} />
+
+    </Routes>
+
+
+    </BrowserRouter>
+   )
+}
+
+export default App;

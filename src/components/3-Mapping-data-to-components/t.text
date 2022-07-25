@@ -1,0 +1,16 @@
+function App(){
+
+    // let items = [];
+    //  for(let x=0;x<Data.length;x++){
+    //     items.push(<Map titleText={Data[x].title} descText={Data[x].desc}/>)
+    // }
+    // let items = [];
+    // items = Data.map((item) => <Map titleText={item.title} descText={item.desc} />);
+
+    return <div>
+     <h1 className='headingStyle'>TODO APP</h1>
+    {/* {items} */}
+    { Data.map((item, index) => <Map key={index} titleText={item.title} descText={item.desc} />)}
+    
+    </div>
+}
